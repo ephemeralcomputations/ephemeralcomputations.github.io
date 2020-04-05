@@ -1,0 +1,30 @@
+@import "reset";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500);
+
+$roboto: 'Roboto';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+  font-weight: 500 !important;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: $roboto;
+  line-height: 1.7rem;
+  padding: 15px;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 20px;
+    padding: 3rem;
+    margin: 0;
+  }
+}

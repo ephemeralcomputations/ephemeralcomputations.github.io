@@ -1,0 +1,54 @@
+{
+  "name": "alek.in",
+  "version": "1.0.17",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --no-source-maps",
+    "clean": "rm -rf dist",
+    "patch": "npm version patch",
+    "publish:aws": "node ./scripts/publish.js",
+    "publish": "npm run patch && npm run clean && npm run build && npm run publish:aws"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "aws-sdk": "^2.311.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-react-app": "^3.1.0",
+    "chalk": "^2.4.1",
+    "cli-chalk": "^1.0.0",
+    "dotenv": "^6.0.0",
+    "fs-jetpack": "^2.1.0",
+    "jszip": "^3.1.5",
+    "mime-types": "^2.1.20",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "latest",
+    "simple-icons": "^1.8.7"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amerani/alek.in.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amerani/alek.in/issues"
+  },
+  "homepage": "https://github.com/amerani/alek.in#readme"
+}
