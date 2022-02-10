@@ -26,7 +26,7 @@
     "fs-jetpack": "^2.1.0",
     "jszip": "^3.1.5",
     "mime-types": "^2.1.20",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "parcel-bundler": "latest",
     "sass": "^1.26.5",
     "simple-icons": "^1.8.7"
